@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Environmental Monitoring Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="realtime-data">
+            <h2>Real-Time Data</h2>
+            <div class="data-cards">
+                <div class="card">
+                    <h3>Temperature</h3>
+                    <p id="temperature">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Humidity</h3>
+                    <p id="humidity">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Air Quality</h3>
+                    <p id="air-quality">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historical-data">
+            <h2>Historical Data</h2>
+            <canvas id="historicalChart"></canvas>
+        </section>
+
+        <section class="alerts">
+            <h2>Alerts & Notifications</h2>
+            <ul id="alert-list">
+                <!-- Alerts will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Environmental Monitoring System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
